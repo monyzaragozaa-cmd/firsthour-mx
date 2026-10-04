@@ -306,16 +306,33 @@ const [llmAnalysis, setLlmAnalysis] = useState(false);
       la recuperación.
     </p>
 
-    {trust === "unsafe" && (
-      <div className="mt-4 rounded-xl border border-amber-300 bg-amber-50 p-4">
-        <p className="font-bold text-amber-900">
-          Primera acción: cambia a un dispositivo que consideres confiable.
-        </p>
-        <p className="mt-1 text-sm text-amber-800">
-          FirstHour MX no puede verificar que este dispositivo esté libre de compromiso.
-        </p>
-      </div>
-    )}
+{trust === "unsafe" && (
+  <div className="mt-4 rounded-xl border border-amber-300 bg-amber-50 p-4">
+    <p className="font-bold text-amber-900">
+      Primera acción: cambia a un dispositivo que consideres confiable.
+    </p>
+
+    <p className="mt-2 text-sm text-amber-800">
+      <strong>¿Qué significa un dispositivo confiable?</strong> Usa un teléfono
+      o computadora que reconozcas, que controles tú o una persona de confianza
+      y donde no hayas notado actividad extraña.
+    </p>
+
+    <p className="mt-2 text-sm text-amber-800">
+      Si no estás segura, no ingreses contraseñas ni códigos todavía.
+    </p>
+
+    <p className="mt-2 text-sm font-medium text-amber-900">
+      Cuando estés en ese dispositivo, abre directamente la app o el sitio
+      oficial de la cuenta afectada. No uses enlaces recibidos por SMS,
+      WhatsApp, correo o mensajes.
+    </p>
+
+    <p className="mt-2 text-sm text-amber-800">
+      FirstHour MX no puede verificar que un dispositivo esté libre de compromiso.
+    </p>
+  </div>
+)}
 
     <div className="mt-5 space-y-3">
       <div className="rounded-xl bg-slate-50 p-4">
